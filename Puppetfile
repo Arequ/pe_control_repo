@@ -6,7 +6,7 @@ mod 'puppetlabs-inifile', '5.2.0'
 mod 'puppetlabs-stdlib',  '8.1.0'
 mod 'puppetlabs-concat',  '7.1.1'
 mod 'puppetlabs-apt',     '8.3.0'
-mod 'puppetlabs-archive', '6.0.2'
+mod 'puppet-archive', '6.0.2'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
