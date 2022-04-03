@@ -8,5 +8,7 @@ hierarchy:
   - name: "Yaml backend"
     data_hash: yaml_data
     paths:
+      - "username/%{username}"
+      - "roles/%{role}"
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
