@@ -38,7 +38,7 @@ class profile::terraform::install (
     }
     'Darwin': {
       include archive
-      $file_slug = "terraform_${tf_version}_${facts['operatingsystem']}_${facts['architecture']}.zip".downcase()
+      $file_slug = "terraform_${tf_version}_${facts['operatingsystem'}_${facts['architecture']}.zip".downcase()
       file { '/tmp' :
         ensure => directory
       }
