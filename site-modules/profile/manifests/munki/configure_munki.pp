@@ -4,7 +4,7 @@
 
 class profile::munki::configure_munki (
     String $basic_auth,
-    Array $managed_settings = {
+    Struct $managed_settings = {
         "AdditionalHttpHeaders" => {
             "type"  => "array",
             "value" => "Authorization: Basic ${basic_auth}",
