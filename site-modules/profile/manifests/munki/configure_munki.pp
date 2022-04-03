@@ -12,7 +12,7 @@ class profile::munki::configure_munki (
         "SoftwareRepoURL" => {
             "type"  => "string",
             "value" => "https://d2nnyptn75ehix.cloudfront.net"
-        }
+        },
         "FollowHTTPRedirects" => {
             "type"  => "string",
             "value" => "all"
