@@ -1,2 +1,13 @@
 ---
 message: "This node is using common data"
+profile::munki::configure_munki::basic_auth: >
+  ENC[PKCS7,MIIBmQYJKoZIhvcNAQcDoIIBijCCAYYCAQAxggEhMIIBHQIBAD
+  AFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEATKW3+ir7Xft+07xdeJdWsYmcSo
+  5AR7NuHjuDWnkWdcriONc3qNko4VMsd/sN1jP5ru6R0C1aCdyge4s6FIsVzV
+  NkDoQ9iPEZLvI43mktWEyRI6FZoj+6RmM8rmbbPklMx0jN4aERCkRxzlZTKm
+  H3EX5e5VSMfTSGB9rZaVrDRXyoBdpOBJlbUMG2nFerBH0bR5cb9eGFj/rzqF
+  TJiwvU5XZPnZknYGGCKEYGcHIunntfICsp2WrhgGke/+yyfJ9OGWoHQjmNHP
+  IaeZeeBTubsSKTXJ9Iv8jJEvi535sByyH+iSFNF6TCQ+W47WX3t1QOogPsvK
+  qGdyFmw+YFRmXL2DBcBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBDs9Vkxh
+  UE0+le0zJgcYQigDCxaC2clYWQoglQQKH3/4k6NhzXTfrzVpmzrGVCpsMbb6
+  aYxiwKqzIIvXdBwkDa4eY=]
