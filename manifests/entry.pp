@@ -27,6 +27,6 @@ File { backup => false }
 class entry (
   String $role = "default"  
 ) {
-  include role::$role
+  include "role::${role}"
 }
 include entry
