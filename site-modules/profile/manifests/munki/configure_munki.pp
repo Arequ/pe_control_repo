@@ -24,7 +24,7 @@ class profile::munki::configure_munki (
         $type = $setting[1]['type']
         $value = $setting[1]['value']
         exec { "exec_setting_${setting_name}" : }
-            command => "/usr/bin/defaults write ManagedInstalls ${setting} ${type} \"${value}\""
+            command => "/usr/bin/defaults write ManagedInstalls ${setting} ${type} \"${value}\"",
             onlyif  => "/usr/bin/defaults read ManagedInstalls | grep ${value}"
         }
     }
