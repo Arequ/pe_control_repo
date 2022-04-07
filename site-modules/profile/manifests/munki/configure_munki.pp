@@ -4,7 +4,7 @@
 
 class profile::munki::configure_munki (
     String $basic_auth,
-    Struct $managed_settings = {
+    Hash $managed_settings = {
         "AdditionalHttpHeaders" => {
             "type"  => "array",
             "value" => "Authorization: Basic ${basic_auth}",
@@ -23,9 +23,10 @@ class profile::munki::configure_munki (
         $setting_name = $setting[0]
         $type = $setting[1]['type']
         $value = $setting[1]['value']
+        # If you want to protect the password/settings from local users without root.
         exec { "exec_setting_${setting_name}" : 
-            command => "/usr/bin/defaults write ManagedInstalls ${setting} ${type} \"${value}\"",
-            onlyif  => "/usr/bin/defaults read ManagedInstalls | grep ${value}"
+            command => "/usr/bin/defaults write ManagedInstalls ${setting_name} -${type} \"${value}\"",
+            unless  => "/usr/bin/defaults read ManagedInstalls | grep '${value}'"
         }
     }
 }
